@@ -1,26 +1,35 @@
-# Quiz-Project-Frontend-Tech
+# Interactive Recipe Finder — Documentation
 
-# Government Examination Quiz
+## Overview
+Interactive Recipe Finder is a frontend-only project that:
+- Lets users search recipes by ingredients (comma-separated)
+- Shows recipe results as cards with images, ready-time, and quick actions
+- Provides a modal for detailed view (ingredients + instructions)
+- Allows saving favorites via LocalStorage
+- Uses Bootstrap + Tailwind for styling, FontAwesome for icons, and AOS for animations
 
-## Project Overview
-This is a modern and attractive front-end quiz game designed to simulate a government examination. The project is built using HTML, CSS, and JavaScript, focusing on a clean, professional, and user-friendly interface. It features a responsive design and an interactive experience with a built-in timer, question navigation, and a detailed results summary.
+## Files
+- `index.html` — HTML layout & structure
+- `style.css` — custom styling
+- `script.js` — interactivity & API handling
+- `README.md` — this file
 
-## Features
-- **Modern UI:** A clean, professional design inspired by official government exam portals.
-- **25 Multiple-Choice Questions:** A substantial question bank to provide a comprehensive test.
-- **Real-time Timer:** A 5-minute timer to simulate exam conditions. The quiz automatically submits when time runs out.
-- **Interactive Navigation:** Users can navigate between questions using 'Previous' and 'Next' buttons.
-- **Detailed Results:** After submission, users receive a detailed breakdown of their score, including correct, incorrect, and unanswered questions.
-- **Dynamic Winner Message:** A special message is displayed for high-achieving users (scoring 80% or more).
+## How to run
+1. Put files into a folder (e.g., `recipe-finder/`).
+2. (Optional) Add `assets/logo.png` if you want a logo visible.
+3. If you want live API results:
+   - Get Spoonacular API key at https://spoonacular.com/food-api
+   - Open `script.js` and set `SPOONACULAR_KEY = "YOUR_KEY"`
+4. Open `index.html` in your browser.
 
-## Technologies Used
-- **HTML5:** For the page structure.
-- **CSS3:** For styling and layout, including a professional color scheme and typography.
-- **JavaScript (ES6):** For all the interactive logic, including question rendering, state management, and score calculation.
+## Notes for Presentation
+- Default `demoMode` is enabled so the project works without any external key — great for offline demos and PPT screenshots.
+- For real production, secure the API key on a server-side proxy instead of using it from client-side.
+- Add more pages (user auth, saved recipes server) to expand the project.
 
-## How to Run
-1. Clone or download the repository.
-2. Open the `index.html` file in your preferred web browser.
-
-## Created By
-[Your Name]
+## Features to highlight in PPT
+- Search by ingredients
+- Filters (veg/vegan/cuisine)
+- Save favorites (LocalStorage)
+- Responsive UI (Bootstrap + Tailwind)
+- Smooth animations (AOS)
